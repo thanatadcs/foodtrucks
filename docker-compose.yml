@@ -21,6 +21,7 @@ services:
       - es
     networks:
       - foodtrucks-net
+    restart: always
   foodtrucks-proxy:
     image: nginx:1.21
     ports:
